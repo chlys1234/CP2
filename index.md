@@ -14,6 +14,7 @@ For image processing, you need to pre-processing MP4 format files in double form
 First, Gaussian pyramid was obtained by down-sampling the original image twice by Gaussian filtering. Then, Laplacian Pyramid was obtained from Burt and Adelson’s The Laplacian pyramid as a compact image code (1983), the downsampled image was upsampled and the Laplacian pyramid was obtained from the error image with the next level image.
 
 ![image](https://user-images.githubusercontent.com/44015662/46716159-e218ad80-cc9d-11e8-89c6-36f6da1969b5.png)
+
 ![image](https://user-images.githubusercontent.com/44015662/46716162-e47b0780-cc9d-11e8-8446-422e6e1633a9.png)
 
 Each level of Laplacian pyramid represents a different frequency region. For example, a smaller level represents a higher frequency.
@@ -22,13 +23,17 @@ Each level of Laplacian pyramid represents a different frequency region. For exa
 -------------
 To apply the Butterworth filter, each channel of the Laplacian pyramid was transformed into frequency domain by using fft function. The specifications of the Butterworth filter are set as follows by referring to the Eulerian Video Magnification for Revealing Subtle Changes in the World.
 Hd = butterworthBandpassFilter(30, 2, 2.33, 2.67)
+
 ![image](https://user-images.githubusercontent.com/44015662/46716200-03799980-cc9e-11e8-9cc8-ebe8f1831ba6.png)
 
 A detailed description of the specification is given in Section 4.
 
-	Extracting the Frequency Band of Interest
+#### Extracting the Frequency Band of Interest
+-------------
 It is important to extract the frequency band of interest to process to selectively amplify the blood flow. In the reference paper, the frequency band of the baby image was 2.33 Hz to 2.67 Hz. On the other hand, the face image was 0.83 Hz to 1 Hz, which can be seen in the figure below.
+
 ![image](https://user-images.githubusercontent.com/44015662/46716228-22782b80-cc9e-11e8-961d-8483c2d7735e.png)
+
 _From Normal limits of the electrocardiogram derived from a large database of Brazilian primary care patients (June 2017)_
 
 When converting the frequency band to heart rate, the baby is 139.8 bpm – 160.2 bpm and the face is 49.8 bpm – 60 bpm. Considering each age, it makes sense to some extent. The following figure shows the average frequency plot for Y, I, Q channel in Laplacian pyramid level 1 of baby image. (DC component is excluded)
