@@ -52,8 +52,11 @@ In the baby image, a level 1 pyramid was used to preserve the original image and
 ##### Baby reference video : <https://youtu.be/bd6UpSlucno>
 
 Baby, α=1 : <https://youtu.be/hDBs2l7YpOw>
+
 Baby, α=5 : <https://youtu.be/av5wL-cTI6M>
+
 Baby, α=10 : <https://youtu.be/wu8GBfaC01o>
+
 Baby, α=50 : <https://youtu.be/Rj7_5lHio3w>
 
 ##### Face reference video :  <https://youtu.be/S784KIP8iFc>
