@@ -49,10 +49,13 @@ In the baby image, a level 1 pyramid was used to preserve the original image and
 
 ![image](https://user-images.githubusercontent.com/44015662/46716299-653a0380-cc9e-11e8-8d4d-361a5255ade8.png)
 
-Baby reference video : https://youtu.be/bd6UpSlucno
-	Baby, α=1 : https://youtu.be/hDBs2l7YpOw
-	Baby, α=5 : https://youtu.be/av5wL-cTI6M
-	Baby, α=10 : https://youtu.be/wu8GBfaC01o
-	Baby, α=50 : https://youtu.be/Rj7_5lHio3w
-Face reference video :  https://youtu.be/S784KIP8iFc
-	Face : https://youtu.be/c97VWsn165s
+##### Baby reference video : <https://youtu.be/bd6UpSlucno>
+
+Baby, α=1 : <https://youtu.be/hDBs2l7YpOw>
+Baby, α=5 : <https://youtu.be/av5wL-cTI6M>
+Baby, α=10 : <https://youtu.be/wu8GBfaC01o>
+Baby, α=50 : <https://youtu.be/Rj7_5lHio3w>
+
+##### Face reference video :  <https://youtu.be/S784KIP8iFc>
+
+Face : <https://youtu.be/c97VWsn165s>
